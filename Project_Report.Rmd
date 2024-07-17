@@ -12,7 +12,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 The goal of this project is to build a prediction model that can predict ambient air pollution concentrations across the continental United States.
 
-The dataset contains annual average concentrations of fine particulate matter (PM2.5) across the U.S. Environmental Protection Agency’s monitoring network in the continental U.S.
+The dataset contains annual average concentrations of fine particulate matter (PM2.5) across the U.S. Environmental Protection Agency’s monitoring network in the continental U.S. You can read the data in the **simpleExcel.xlsx** file. 
+
+## Information & Summary of Variables (Predictors and Response)
+
+The outcome is in a column called value and it represents the annual average PM2.5 con- centration at a monitor. It is measured in micrograms per cubic meter. The measurements here were taken using what is known as a gravimetric method and it is considered the gold standard for outdoor air pollution concentrations. The rest of the predictor variables and what each of them represent can be viewed in the **information_Airpollution.pdf**. 
 
 
 ```{r}
