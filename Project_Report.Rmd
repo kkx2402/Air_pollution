@@ -1,5 +1,5 @@
 ---
-title: "Project 2 Report"
+title: "Project Report"
 output:
   pdf_document: default
   html_document: default
@@ -15,12 +15,15 @@ The goal of this project is to build a prediction model that can predict ambient
 The dataset contains annual average concentrations of fine particulate matter (PM2.5) across the U.S. Environmental Protection Agency’s monitoring network in the continental U.S.
 
 
-```{r, show_col_types = FALSE}
+```{r}
+options(readr.show_col_types = FALSE)
 library(tidyverse)
 library(tidymodels)
 library(corrplot)
 dat <- read_csv("pm25_data.csv.gz")
-save(dat, file = "pollution.RData")
+library(writexl)
+write_xlsx(dat,"simpleExcel.xlsx",  col_names = TRUE,
+  format_headers = TRUE)
 ```
 
 
